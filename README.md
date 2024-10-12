@@ -31,8 +31,8 @@ This is a simple Flask-based e-commerce application that allows users to browse 
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/ahmedsamir45/order-system.git
+    cd order-system
     ```
 
 2. Install the required packages:
