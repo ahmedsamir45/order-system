@@ -1,4 +1,4 @@
-# Flask E-Commerce Application
+# Flask Order System Application
 
 This is a simple Flask-based e-commerce application that allows users to browse products, place orders, and provides an admin interface for managing products and orders.
 
