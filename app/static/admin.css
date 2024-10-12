@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: rgb(2, 27, 66);
+    color: white;
+    border-radius: 20px;
+    transition: .5s;
+}
+h1:hover{
+    background-color: white;
+    border: 1px solid rgb(2, 27, 66);
+    color: rgb(2, 27, 66);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: rgb(2, 82, 66);
+    color: white;
+    border-radius: 20px;
+    transition: .5s;
+}
+/* Basic table styling */
+.custom-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove spacing between cells */
+    background-color: #f9f9f9; /* Light background color */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Table headers styling */
+.custom-table th {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 15px; /* Padding for headers */
+    text-align: left; /* Align text to the left */
+}
+.custom-table:last-of-type{
+    margin-bottom: 20px
+}
+/* Table cells styling */
+.custom-table td {
+    padding: 15px; /* Padding for cells */
+    border: 1px solid #ddd; /* Light border around cells */
+}
+
+/* Row hover effect */
+.custom-table tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Image styling */
+.custom-table img {
+    max-height: 100px; /* Limit image height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Button styling */
+.btn {
+    padding: 8px 12px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Edit button styling */
+.edit-btn {
+    background-color: #ffc107; /* Yellow background */
+    color: black; /* Black text */
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .custom-table {
+        display: block; /* Make the table block on small screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+    }
+}

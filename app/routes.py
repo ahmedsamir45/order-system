@@ -4,10 +4,14 @@ from app import app, db
 from app.models import Product, Order
 from werkzeug.utils import secure_filename
 from sqlalchemy import or_
+import os
+from dotenv import load_dotenv
 
 # Hardcoded credentials for simplicity
-USERNAME = "ahmedsamer6788"
-PASSWORD = "PASS!!word123"
+USERNAME = os.environ.get('USERNAME1')
+PASSWORD = os.environ.get('PASSWORD')
+print(USERNAME)
+print(PASSWORD)
 
 @app.route('/')
 def index():
@@ -37,7 +41,7 @@ def product(id):
         db.session.commit()
         flash('Order placed successfully!')
         return redirect(url_for('index'))
-    return render_template('product.html', product=product)
+    return render_template('product.html', product=product,style="product")
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -78,7 +82,7 @@ def admin():
             return redirect(url_for('admin'))
     products = Product.query.all()
     orders = Order.query.all()
-    return render_template('admin.html', products=products, orders=orders)
+    return render_template('admin.html', products=products, orders=orders,style="admin")
 
 @app.route('/admin/update/<int:id>', methods=['GET', 'POST'])
 def update_product(id):
